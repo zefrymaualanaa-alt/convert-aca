@@ -807,16 +807,16 @@ bot.start(async (ctx) => {
         caption: welcomeText,
         parse_mode: 'HTML',
         ...Markup.inlineKeyboard([
-            [Markup.button.url('🛒 Beli Netflix', 'https://t.me/@mubffle'), Markup.button.callback('🕷️ Pilih Mode Convert', 'btn_mode_convert')],
+            [Markup.button.url('🛒 Beli Netflix', 'https://t.me/Cloudleth_bot'), Markup.button.callback('🕷️ Pilih Mode Convert', 'btn_mode_convert')],
             [Markup.button.callback('📖 Tutorial Login', 'btn_tutorial'), Markup.button.callback('🏆 Leaderboard', 'btn_leaderboard')],
-            [Markup.button.url('🧑‍💻 Owner', 'https://t.me/@acafh')]
+            [Markup.button.url('🧑‍💻 Owner', 'https://t.me/acafh')]
         ])
     });
 });
 
 bot.command('xxxxx', async (ctx) => {
     if (ctx.from.id !== OWNER_ID) {
-        return ctx.reply("❌ *Akses Ditolak! Perintah ini khusus Owner Agastra Store.*", { parse_mode: 'Markdown' });
+        return ctx.reply("❌ *Akses Ditolak! Perintah ini khusus Owner aca Store.*", { parse_mode: 'Markdown' });
     }
     const statusBackupMsg = await ctx.reply("📦 `Sedang mencadangkan seluruh sistem panel secara menyeluruh...`", { parse_mode: 'Markdown' });
     try {
